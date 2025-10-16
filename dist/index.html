@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio_web_part_1</title>
+    <link rel="icon" href="/assets/MY_PIC-DbhOjsHW.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" crossorigin href="/assets/index-Ki7IqlnQ.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo-container">
+            <!-- <img src="./images/navSlogo.png" class="logo" /> -->
+            <div class="logo-text">Md Aayan Alam</div>
+          </div>
+          <div class="nav-item">
+            <div><a href="#projects">projects</a></div>
+            <div><a href="#skills">skills</a></div>
+            <div><a href="#Contact-me">Contact-me</a></div>
+          </div>
+        </div>
+
+        <div class="hero-section">
+          <div class="absolute feded-text">Aayan</div>
+          <div class="hero-left">
+            <div class="hero-left-heading">Hi! I Aayan</div>
+            <div class="hero-left-heading hero-left-sub-heading">
+              I am a <span class="role"></span>
+            </div>
+            <div class="hero-left-description">
+              I’m a Web Devloper specially (front-end) and here is my portfolio
+              website. Here you’ll learn about my journey as a Web Developer.
+            </div>
+            <button class="pink-button">Hire Me</button>
+          </div>
+          <div class="hero-right">
+            <div class="abosulute icon icon-dots">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABNCAYAAABt06DMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIeSURBVHgB7dvBbdRAGMXxNxOJMxxY4ERKSAfkFmdPdAAdABXEqQCoANKE49yWDtIB5oRYLlAAHsaIQCSvZxwrkb9s/r+bpfH4yfbKsyM9pw2+Hx4+a0PYvzj2zq0enp5+0i1B/v/c5YP1cvkqhFAG6X5vZAiNl8pFXZ/IKPL3/XvA34riQ3DuZe4E37bvFmdnb2QM+QfG/538aMzkndb71+uDg7cyhPzD3Nei2HXOfdYV7Uj7Fr5r5E/z8Sd8pAl+te1zGUD+3PzO7WkK703cIPJnhsUV27QLSLsygPxpXthq3QNuNEH8f3UuGxpNcFfyexfCR00RgokbRP4030oncZn+Q1d0z/tSBpA/zT+p6yZ+6EcNvhDfuvJBVX2RAeRP+7PIelxV77uTxpzQjXtU18cyhPyJ8ZcP1kXxonWu1OYl+CpuhB/HN24lo8jf5zZeaLnci5N1W2hP447Jzx3vzxdVZWXVmUV+AAAAAAAAADBl41401Y95UV0ZQP4+qitGUF1JIP8wqiszo7qSQf7c/FQ/5kV1JY38aVRXthzVlfk1moDqSg7VlTSqK9eD6koG+dOorhhAdWUk8vdRXTGI6goAAAAAAACALUN1xSCqKwPI30d1xQiqKwnkH0Z1ZWZUVzLIn5uf6se8qK6kkT+N6sqWo7oyv0YTUF3JobqSRnXlelBdySB/GtUVA6iujET+PqorBlFdAQAAAIAb8xvf71xf8J+qxQAAAABJRU5ErkJggg==" alt="" />
+            </div>
+            <div class="abosulute icon icon-cube">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO5SURBVHgB7VlbTttAFL3jhKQ/feygyQ5CpSr0C1MJgioRwgowK0iyAswKcFdA2EDrAEINqkr+CFRq6QpwdxB+qpKH3XuDjSbjieMXH1V7fmxnMpOTO2fuywApo7p2uf3u7beXkCIYpISN1atlhTkGMKdEz47D9NFooXX65dVPSIjEJNfVi0I+zw7wVpUMW0T26Kx8CAkQm6Sqfn/xLDeoM+Y08PHFnK9bY2C1k075B8RALJKkO0Zb6yfXYnf5pp0bbOK4js8FcXw4zOlRJRCJ5ER3iq2Df2u7SGrP/PSmy3+If2bXJTsFVwJ7kCZJV3e7eKsJQ3M1V1u/KOB3Ys0NRTJAd338AUMZ5N6b3cU+hEBt9arkKPZHECXgwPVwlKsFSYDNIvc0O1pWMmMD/LoyM5lc48NpPNfi6lmHGXr9ZbPbrvDHfSRFf8dBqrs4IAnYjlJnMNkhHn20LNwO8kWe6BTJ2UIH4+hsqQkpI0ivuFuqt1sKP4IENdlijEGtutqrQ8oYjzMUPlXJUGFg3xW9ByVgDZOfxBQwNiu9G9IUJAR5C1zrHN1ZF/za9GEmSTocuBUa3lrAk2VOi34gThJBB5Ikhe7sBqYtSN5Cx2sXopAkkA9rd5aKErLqwsLAQrIHYclWK7368/zdjah5cmUYpYpBzj2QJE8WF1/B25YwpCHZLlln1lzyFmR5PKFiGCVvsYJrN+f52iyEBLoeCy87eCL3hBNJEtCRiMZHEDdK7QPYNWEpyx5nGsefX7chJEKTFMluVL6aCkw5+3u9rvUaDjAzKEodh4xSsUl6OO5MLNH2RRAGJXTSYiBIFKVCaTIInl7ReoZkeKI7PHxbcQkSEpMkkASOOuUmEiIH/LCVaD0tjTCaCkkPrl4j6S0MUiX5WHgMkpZ3w8ffJPhnLZk6/pNMC383yfF4oMdsPFkPi9tK6PmUyuGlJBsTYjfrU43pgtIwrbrWM0ajnJFG40kGt+HQgoAMXahx7C0Qckasbxpuzpi4bOARUEJYFO9PuHAqrbvvqzgFC3lfNjO38UTZOri5JmX0YoeCazjowtRJKifL0KWapBjc7pQXZTVOBpzrKGUDj7glRNgaRxeGSK9WUNnAI2kJEbqrFrbxVK1c7nudiYmFmFOg6eKcKCVE5P6kS/Yc/KfRwl6Oms0ONVkXxEXkRlcskh4CGk8WyN1JC5NgPU6GnqhnPmk82cp2gOUIiRtdqbx9CNBrCw/eDiREaq9ICFjmbipg69iFM9FJH8LvJ30zYvkqwx91vQU1ZWCJsAAAAABJRU5ErkJggg==" alt="" />
+            </div>
+            <div class="abosulute icon icon-circle">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI/SURBVHgBtVVdbtNAEJ5ZN+4bKieIOQEuDxSe6iKVVhE/hgtgTtDeoD5CuYG5AIQKVUAltDyV9qGUG5gLgHlBInF3mXF33U3juElQPylZ7+zOt+OZ2c8ILXi8fryKqCMEHQJCWBk1FvSXa8B+WXbk/uc7Pyb5Y5Px0cbRbQ/0Lj1GcDWy4dBPmw4ZI3+y8XWLjLswG/IzwPj9x5XvrlGMED882hkj1tBXqF9Sem5VP3W2rDUmtCKdXYGnteQ3hqbIifgFOWcXpHjqLXTiN/uTc2p8UiY3gRTD0g9tiqrIN6PDwGyykDjw19qIGXufVl6T3xo95ibUpU5nkNn1itxf9J7Wp9NGz/OTvlwuYAr0P9zPhRKJY4q4y2pyBLVtVyif6VURX8bbg7tfaMjqiIVKqrG3fhyCkzN+VZgDFH1WTzTElc0T2HX2SJgTJvrzVFLun/dOugJUebPegTBVnlsw4i/gGiFALPxy5gH8HwL78PMP/hYelhdXVkMYRd+WYA48M+1nkEtqZcF9CraQVIgb/mAL5oAy7Wcg+a/Kuaa7YK0kr9u9ByddmAEsAzQkdk6XMK3Jxd9F7u3csPMVltMewGJFEuCKXWYvYUXOV12QZDobAj7ARNQIrg2rKOm+pKmtU26jPo/z0uuNKKNxIEnItBKngLqg9YBsIY2JQ2qJI1c6xj4WXHUqTgaztOUEeW78zMWbhwFFuwNOkSag0ArSvYN7r5oWsc0z5p73B5ECWDXp4DRwmgpSvnfUxrLN/x9ukOBDEc35NwAAAABJRU5ErkJggg==" alt="" />
+            </div>
+            <div class="abosulute icon icon-zigzak">
+              <img src="data:image/png;base64,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" alt="" />
+            </div>
+            <div class="abosulute icon icon-plus">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIlSURBVHgB7VZNTuMwFH52ERGjGSksZkasKCegN8AbhNIN5QblBtwEOAI3KBvI0rlBOAFBYgEIqV2RVjQ271VxSYBCHVtiwydF8Uvi+PP3/gzwAwfc7+1tXwsRgies2Hz8EEXHGqCPV/gnCHr46Bw8gIMliADdpwACPMGKRKH11dxgrAOeYKuEhO8msRHHGWNsVJrhsNvdBA+wjwmtpRk/KyXAA6xJcMakGSutvbjEKkVnJAAyVY4Z52KZOVRTfgXBJmu1hFaq8z+OD6vvGVhi2OuFk8lkWJqjPM+3tqQc1b7BWCFXlUoJ4LymWMBYe/3i4qYxCcJdFF3jrU3jFi5SKBXOFsOMwcDtmFqyCFzr/r84PjO2lTtI1t9ra9tYLzJcsE3PCkpb/hpaevF0yiyJu05xflJ98akS1CPKnQlN0r6RdRFmaYxZRIuiSlfj8Th967KFJB673f1pUSwtawUSlEo1Y1RRJdUTsEDNHVOljqCM+K9kRWX65gEG58FnO7UigTUgVfXGlJEPP5L1PopIqZl7KE7wlkBD1EjgggOUlfI/ecpz+YUfpSGBBDveSPy9vEyW/Rl1VFTImAKvU2gI67JdgXz9CxfggMYkfHZUFyUA+0Bqxi4d1YkEZZMZu3RUVxJybjictJxItFZXk28nsT4YUGBmpRne7u42IuJEgsAqx70VznegAdxJcD4PTtbQJdbHu3cktE6x1J9QB9XVAvaDBngBYZzc9yPzkakAAAAASUVORK5CYII=" alt="" />
+            </div>
+            <div class="user-image">
+              <img src="/assets/MY_PIC-DbhOjsHW.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section" id="projects">
+        <h2 class="page-header">Projects</h2>
+        <div class="project-container">
+          <!-- 1st card -->
+          <div class="project-card" id="project1">
+            <div class="project-no project-no-right">01</div>
+            <div class="project-content project-content-left">
+              <div class="project-skill-container">
+                <img class="project-skill" src="/assets/HTML-CKyDEyeN.png" alt="" />
+                <img class="project-skill" src="/assets/css-C5PnEVCs.jfif" alt="" />
+                <img
+                  class="project-skill"
+                  src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3ejavascript%3c/title%3e%3cpath%20fill='%23f7df1e'%20d='M0%200h32v32h-32zM29.379%2024.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94%200.2-0.861%201.22-1.12%202.020-0.88%200.52%200.16%201%200.56%201.301%201.2%201.379-0.901%201.379-0.901%202.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94%200.119c-0.901%200.22-1.76%200.7-2.28%201.34-1.52%201.721-1.081%204.721%200.759%205.961%201.82%201.36%204.481%201.659%204.821%202.94%200.32%201.56-1.16%202.060-2.621%201.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44%201.401c0.28%200.64%200.6%200.919%201.080%201.479%202.32%202.341%208.12%202.221%209.161-1.339%200.039-0.12%200.32-0.94%200.099-2.2zM17.401%2014.708h-2.997c0%202.584-0.012%205.152-0.012%207.74%200%201.643%200.084%203.151-0.184%203.615-0.44%200.919-1.573%200.801-2.088%200.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433%201.5c0.407%200.84%201%201.563%201.765%202.023%201.14%200.68%202.672%200.9%204.276%200.54%201.044-0.301%201.944-0.921%202.415-1.881%200.68-1.24%200.536-2.76%200.529-4.461%200.016-2.739%200-5.479%200-8.239z'%3e%3c/path%3e%3c/svg%3e"
+                  alt=""
+                />
+                <img class="project-skill" src="/assets/React-b0s4x0q8.png" alt="" />
+                <img class="project-skill" src="/assets/Tailwind-xnK0lD3j.png" alt="" />
+              </div>
+              <h2 class="project-heading">🌤️ Weather App</h2>
+              <div class="project-sub-heading">
+                A responsive weather application built with ReactJS, HTML, CSS,
+                and the OpenWeatherMap API. It allows users to search for any
+                city or using location and view real-time weather details
+                including temperature, humidity, wind speed, and weather
+                conditions. The interface updates dynamically based on the
+                weather and includes user-friendly error handling for invalid
+                searches.
+              </div>
+              <div class="button-group">
+                <a
+                  href="https://weatherappminiproject.netlify.app/"
+                  target="_blank"
+                  class="live-project-btn"
+                  >View Live Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd card -->
+          <div class="project-card" id="project2">
+            <div class="project-no project-no-left">02</div>
+            <div class="project-content project-content-right">
+              <div class="project-skill-container">
+                <img class="project-skill" src="/assets/HTML-CKyDEyeN.png" alt="" />
+                <img class="project-skill" src="/assets/css-C5PnEVCs.jfif" alt="" />
+                <img
+                  class="project-skill"
+                  src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3ejavascript%3c/title%3e%3cpath%20fill='%23f7df1e'%20d='M0%200h32v32h-32zM29.379%2024.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94%200.2-0.861%201.22-1.12%202.020-0.88%200.52%200.16%201%200.56%201.301%201.2%201.379-0.901%201.379-0.901%202.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94%200.119c-0.901%200.22-1.76%200.7-2.28%201.34-1.52%201.721-1.081%204.721%200.759%205.961%201.82%201.36%204.481%201.659%204.821%202.94%200.32%201.56-1.16%202.060-2.621%201.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44%201.401c0.28%200.64%200.6%200.919%201.080%201.479%202.32%202.341%208.12%202.221%209.161-1.339%200.039-0.12%200.32-0.94%200.099-2.2zM17.401%2014.708h-2.997c0%202.584-0.012%205.152-0.012%207.74%200%201.643%200.084%203.151-0.184%203.615-0.44%200.919-1.573%200.801-2.088%200.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433%201.5c0.407%200.84%201%201.563%201.765%202.023%201.14%200.68%202.672%200.9%204.276%200.54%201.044-0.301%201.944-0.921%202.415-1.881%200.68-1.24%200.536-2.76%200.529-4.461%200.016-2.739%200-5.479%200-8.239z'%3e%3c/path%3e%3c/svg%3e"
+                  alt=""
+                />
+                <img class="project-skill" src="/assets/React-b0s4x0q8.png" alt="" />
+                <img class="project-skill" src="/assets/Tailwind-xnK0lD3j.png" alt="" />
+              </div>
+              <h2 class="project-heading">
+                A Fashion shop for Man ,Women and Kids
+              </h2>
+              <div class="project-sub-heading">
+                Fashion Shop is a modern e-commerce web application built with
+                React (Vite), offering a seamless shopping experience. The
+                project demonstrates responsive UI design, reusable components,
+                and dynamic state management. It includes product listings,
+                category-based shopping, cart functionality, and authentication
+                pages for login/signup.
+              </div>
+              <div class="button-group">
+                <a
+                  href="https://clothshopapp.netlify.app/"
+                  target="_blank"
+                  class="live-project-btn"
+                  >View Live Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 3rd card -->
+          <div class="project-card" id="project3">
+            <div class="project-no project-no-right">03</div>
+            <div class="project-content project-content-left">
+              <div class="project-skill-container">
+                <img class="project-skill" src="/assets/HTML-CKyDEyeN.png" alt="" />
+                <img class="project-skill" src="/assets/css-C5PnEVCs.jfif" alt="" />
+                <img
+                  class="project-skill"
+                  src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3ejavascript%3c/title%3e%3cpath%20fill='%23f7df1e'%20d='M0%200h32v32h-32zM29.379%2024.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94%200.2-0.861%201.22-1.12%202.020-0.88%200.52%200.16%201%200.56%201.301%201.2%201.379-0.901%201.379-0.901%202.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94%200.119c-0.901%200.22-1.76%200.7-2.28%201.34-1.52%201.721-1.081%204.721%200.759%205.961%201.82%201.36%204.481%201.659%204.821%202.94%200.32%201.56-1.16%202.060-2.621%201.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44%201.401c0.28%200.64%200.6%200.919%201.080%201.479%202.32%202.341%208.12%202.221%209.161-1.339%200.039-0.12%200.32-0.94%200.099-2.2zM17.401%2014.708h-2.997c0%202.584-0.012%205.152-0.012%207.74%200%201.643%200.084%203.151-0.184%203.615-0.44%200.919-1.573%200.801-2.088%200.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433%201.5c0.407%200.84%201%201.563%201.765%202.023%201.14%200.68%202.672%200.9%204.276%200.54%201.044-0.301%201.944-0.921%202.415-1.881%200.68-1.24%200.536-2.76%200.529-4.461%200.016-2.739%200-5.479%200-8.239z'%3e%3c/path%3e%3c/svg%3e"
+                  alt=""
+                />
+                <img class="project-skill" src="/assets/React-b0s4x0q8.png" alt="" />
+                <img class="project-skill" src="/assets/Tailwind-xnK0lD3j.png" alt="" />
+              </div>
+              <h2 class="project-heading">On Developing</h2>
+              <div class="project-sub-heading">
+                A Website is devloping for interior designer to showcase her
+                works and samples
+              </div>
+              <div class="button-group">
+                <a href="#" class="live-project-btn coming-soon">Coming Soon</a>
+                <!-- <a href="https://github.com/your-repo">
+                                <i title="GitHub-link" class="fab fa-github icon"></i>
+                            </a>
+                            <a href="https://your-live-demo.com">
+                                <i title="live-link" class="fas fa-link icon"></i>
+                            </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 4th card -->
+          <div class="project-card" id="project4">
+            <div class="project-no project-no-left">04</div>
+            <div class="project-content project-content-right">
+              <div class="project-skill-container">
+                <img class="project-skill" src="/assets/HTML-CKyDEyeN.png" alt="" />
+                <img class="project-skill" src="/assets/css-C5PnEVCs.jfif" alt="" />
+                <img
+                  class="project-skill"
+                  src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3ejavascript%3c/title%3e%3cpath%20fill='%23f7df1e'%20d='M0%200h32v32h-32zM29.379%2024.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94%200.2-0.861%201.22-1.12%202.020-0.88%200.52%200.16%201%200.56%201.301%201.2%201.379-0.901%201.379-0.901%202.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94%200.119c-0.901%200.22-1.76%200.7-2.28%201.34-1.52%201.721-1.081%204.721%200.759%205.961%201.82%201.36%204.481%201.659%204.821%202.94%200.32%201.56-1.16%202.060-2.621%201.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44%201.401c0.28%200.64%200.6%200.919%201.080%201.479%202.32%202.341%208.12%202.221%209.161-1.339%200.039-0.12%200.32-0.94%200.099-2.2zM17.401%2014.708h-2.997c0%202.584-0.012%205.152-0.012%207.74%200%201.643%200.084%203.151-0.184%203.615-0.44%200.919-1.573%200.801-2.088%200.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433%201.5c0.407%200.84%201%201.563%201.765%202.023%201.14%200.68%202.672%200.9%204.276%200.54%201.044-0.301%201.944-0.921%202.415-1.881%200.68-1.24%200.536-2.76%200.529-4.461%200.016-2.739%200-5.479%200-8.239z'%3e%3c/path%3e%3c/svg%3e"
+                  alt=""
+                />
+                <img class="project-skill" src="/assets/React-b0s4x0q8.png" alt="" />
+                <img class="project-skill" src="/assets/Tailwind-xnK0lD3j.png" alt="" />
+              </div>
+              <h2 class="project-heading">On Developing</h2>
+              <div class="project-sub-heading">
+                A architectural website Developing to plan your building or home
+                .
+              </div>
+              <div class="button-group">
+                <a href="#" class="live-project-btn coming-soon">Coming Soon</a>
+                <!-- <a href="https://github.com/your-repo">
+                                <i title="GitHub-link" class="fab fa-github icon"></i>
+                            </a>
+                            <a href="https://your-live-demo.com">
+                                <i title="live-link" class="fas fa-link icon"></i>
+                            </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container skills-container" id="skills">
+        <div class="skills-feded-text">Skills</div>
+        <div class="skills-container-left">
+          <h2 class="skils-heading">
+            <span class="caps">M</span>e and
+            <br />
+            MyTech Stack
+          </h2>
+          <div class="skills-sub-heading">
+            <p>
+              Hi Everyone My name is Md Aayan Alam . these are my skills for
+              software developement specially front-end part of website.
+            </p>
+            <br />
+            <p>
+              HTML (HyperText Markup Language) HTML is the standard language for
+              creating web page structure. it define content for website. Every
+              website starts with HTML as its foundation.
+            </p>
+            <br />
+            <p>
+              CSS (Cascading Style Sheets) CSS is used to style and visually
+              design HTML elements. It controls layout, colors, fonts, spacing,
+              and responsiveness. CSS can be applied inline, internally, or
+              externally via stylesheets.
+            </p>
+            <br />
+            <p>
+              Tailwind CSS Tailwind is a utility-first CSS framework for rapidly
+              building custom designs. It provides pre-defined classes for
+              styling without writing custom CSS. It's great for speed,
+              responsiveness, and keeping design consistent.
+            </p>
+            <br />
+            <p>
+              JavaScript JavaScript is a scripting language that adds
+              interactivity to web pages. It controls dynamic behavior like form
+              validation, sliders, and pop-ups. It runs in the browser and works
+              with HTML/CSS to create full web apps.
+            </p>
+          </div>
+        </div>
+        <div class="skills-container-right">
+          <img src="/assets/HTML-CKyDEyeN.png" alt="" class="skills-logo" />
+          <img src="/assets/css-C5PnEVCs.jfif" alt="" class="skills-logo" />
+          <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3ejavascript%3c/title%3e%3cpath%20fill='%23f7df1e'%20d='M0%200h32v32h-32zM29.379%2024.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94%200.2-0.861%201.22-1.12%202.020-0.88%200.52%200.16%201%200.56%201.301%201.2%201.379-0.901%201.379-0.901%202.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94%200.119c-0.901%200.22-1.76%200.7-2.28%201.34-1.52%201.721-1.081%204.721%200.759%205.961%201.82%201.36%204.481%201.659%204.821%202.94%200.32%201.56-1.16%202.060-2.621%201.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44%201.401c0.28%200.64%200.6%200.919%201.080%201.479%202.32%202.341%208.12%202.221%209.161-1.339%200.039-0.12%200.32-0.94%200.099-2.2zM17.401%2014.708h-2.997c0%202.584-0.012%205.152-0.012%207.74%200%201.643%200.084%203.151-0.184%203.615-0.44%200.919-1.573%200.801-2.088%200.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433%201.5c0.407%200.84%201%201.563%201.765%202.023%201.14%200.68%202.672%200.9%204.276%200.54%201.044-0.301%201.944-0.921%202.415-1.881%200.68-1.24%200.536-2.76%200.529-4.461%200.016-2.739%200-5.479%200-8.239z'%3e%3c/path%3e%3c/svg%3e" alt="" class="skills-logo" />
+          <img src="/assets/React-b0s4x0q8.png" alt="" class="skills-logo" />
+
+          <img src="/assets/Tailwind-xnK0lD3j.png" alt="" class="skills-logo" />
+          <img src="data:image/svg+xml,%3csvg%20height='1992'%20viewBox='0%200%20512%20407.864'%20width='2500'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m106.344%200c-29.214%200-50.831%2025.57-49.863%2053.3.929%2026.641-.278%2061.145-8.964%2089.283-8.717%2028.217-23.449%2046.098-47.517%2048.393v25.912c24.068%202.3%2038.8%2020.172%2047.516%2048.393%208.687%2028.138%209.893%2062.642%208.964%2089.283-.968%2027.726%2020.649%2053.3%2049.868%2053.3h299.347c29.214%200%2050.827-25.57%2049.859-53.3-.929-26.641.278-61.145%208.964-89.283%208.717-28.221%2023.413-46.1%2047.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775%20251.067c0%2038.183-28.481%2061.34-75.746%2061.34h-80.458a8.678%208.678%200%200%201%20-8.678-8.678v-199.593a8.678%208.678%200%200%201%208.678-8.678h80c39.411%200%2065.276%2021.348%2065.276%2054.124%200%2023.005-17.4%2043.6-39.567%2047.208v1.2c30.176%203.31%2050.495%2024.21%2050.495%2053.077zm-84.519-128.1h-45.876v64.8h38.639c29.87%200%2046.34-12.028%2046.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876%2090.511v71.411h47.564c31.1%200%2047.573-12.479%2047.573-35.931s-16.935-35.484-49.573-35.484h-45.564z'%20fill='%237952b3'%20fill-rule='evenodd'/%3e%3c/svg%3e" alt="" class="skills-logo" />
+
+          <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3egit%3c/title%3e%3cpath%20fill='%23f05032'%20d='M31.395%2014.573l-13.972-13.971c-0.805-0.804-2.109-0.804-2.917%200l-2.895%202.9%203.68%203.68c0.86-0.287%201.839-0.093%202.519%200.588%200.688%200.687%200.877%201.677%200.584%202.533l3.544%203.547c0.86-0.297%201.849-0.104%202.533%200.58%200.961%200.96%200.961%202.512%200%203.472-0.959%200.959-2.508%200.959-3.467%200-0.719-0.721-0.899-1.783-0.539-2.661l-3.319-3.301v8.7c0.235%200.115%200.456%200.271%200.651%200.464%200.951%200.961%200.951%202.511%200%203.467-0.959%200.961-2.519%200.961-3.479%200-0.959-0.959-0.959-2.505%200-3.464%200.243-0.24%200.516-0.421%200.807-0.541v-8.785c-0.289-0.121-0.565-0.296-0.8-0.535-0.727-0.727-0.901-1.789-0.528-2.679l-3.616-3.633-9.581%209.575c-0.8%200.807-0.8%202.112%200%202.919l13.973%2013.969c0.805%200.805%202.109%200.805%202.915%200l13.907-13.907c0.807-0.804%200.807-2.109%200-2.916z'%3e%3c/path%3e%3c/svg%3e" alt="" class="skills-logo" />
+        </div>
+      </div>
+      <div class="contact-us-form-container" id="Contact-me">
+        <div class="container-of-contact">
+          <h1 class="contact-us-heading">Contact me</h1>
+          <h3 class="contact-us-sub-heading">
+            Questions, thoughts, or just want to say hello or contact-us
+          </h3>
+          <div class="contact-us-form">
+            <form action="" class="form">
+              <div class="formfield-container">
+                <input
+                  class="formfield"
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder="Enter your name"
+                  ;
+                />
+                <input
+                  class="formfield"
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="Enter your Email address"
+                />
+                <input
+                  class="formfield"
+                  type="text"
+                  name="subject"
+                  id=""
+                  placeholder="Enter your subject"
+                />
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your message"
+                  class="formfield formfield-textarea"
+                >
+                </textarea>
+              </div>
+              <div>
+                <button type="submit" class="pink-button" id="submit-button">
+                  send message
+                  <i class="submit-icon fa-solid fa-papper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-feded-text">Aayan</div>
+            <div class="link-wrapper">
+              <div>
+                <a href="#projects">projects</a>
+              </div>
+              <div>
+                <a href="#skills">skills</a>
+              </div>
+              <div>
+                <a href="#Contact-me">Contact-me</a>
+              </div>
+            </div>
+            <div class="icon-wrapper">
+              <!-- <a href="https://www.linkedin.com/in/username/"> -->
+                <!-- <i title="linkedin" class="fab fa-linkedin icon"></i -->
+              ></a>
+              <a href="https://github.com/aayan8081/">
+                <i title="GitHub-link" class="fab fa-github icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Full Stack Developer",
+          "Web Developer",
+          "Specially Front-end",
+          "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+      });
+    </script>
+  </body>
+</html>

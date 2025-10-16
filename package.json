@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-web-app-main",
+  "version": "1.0.0",
+  "description": "This is my portfolio website using html and css",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.10"
+  }
+}
