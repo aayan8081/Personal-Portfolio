@@ -3,359 +3,438 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio_web_part_1</title>
-    <link rel="icon" href="./images/MY_PIC.png" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-
-    <link rel="stylesheet" href="port-one.css" />
+    <title>Md Aayan Alam - Portfolio</title>
+    <link rel="icon" href="/assets/MY_PIC-DbhOjsHW.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" crossorigin href="/assets/index-BVgjh7kt.css">
   </head>
   <body>
-    <div id="wrapper">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo-container">
-            <!-- <img src="./images/navSlogo.png" class="logo" /> -->
-            <div class="logo-text">Md Aayan Alam</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-text">Md Aayan Alam</span>
           </div>
-          <div class="nav-item">
-            <div><a href="#projects">projects</a></div>
-            <div><a href="#skills">skills</a></div>
-            <div><a href="#Contact-me">Contact-me</a></div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
           </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
+    </nav>
 
-        <div class="hero-section">
-          <div class="absolute feded-text">Aayan</div>
-          <div class="hero-left">
-            <div class="hero-left-heading">Hi! I Aayan</div>
-            <div class="hero-left-heading hero-left-sub-heading">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+      </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hello, I'm <span class="highlight">Aayan</span>
+            </h1>
+            <h2 class="hero-subtitle">
               I am a <span class="role"></span>
+            </h2>
+            <p class="hero-description">
+              Passionate front-end developer creating beautiful, responsive web experiences. 
+              I specialize in modern web technologies and love turning ideas into reality.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
-            <div class="hero-left-description">
-              I’m a Web Devloper specially (front-end) and here is my portfolio
-              website. Here you’ll learn about my journey as a Web Developer.
-            </div>
-            <button class="pink-button">Hire Me</button>
           </div>
-          <div class="hero-right">
-            <div class="abosulute icon icon-dots">
-              <img src="./images/dots.png" alt="" />
-            </div>
-            <div class="abosulute icon icon-cube">
-              <img src="./images/cube.png" alt="" />
-            </div>
-            <div class="abosulute icon icon-circle">
-              <img src="./images/circle.png" alt="" />
-            </div>
-            <div class="abosulute icon icon-zigzak">
-              <img src="./images/zigzags.png" alt="" />
-            </div>
-            <div class="abosulute icon icon-plus">
-              <img src="./images/plus.png" alt="" />
-            </div>
-            <div class="user-image">
-              <img src="./images/MY_PIC.png" alt="" />
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="/assets/MY_PIC-DbhOjsHW.png" alt="Md Aayan Alam" class="profile-img" />
+              <div class="image-glow"></div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="project-section" id="projects">
-        <h2 class="page-header">Projects</h2>
-        <div class="project-container">
-          <!-- 1st card -->
-          <div class="project-card" id="project1">
-            <div class="project-no project-no-right">01</div>
-            <div class="project-content project-content-left">
-              <div class="project-skill-container">
-                <img class="project-skill" src="./images/HTML.png" alt="" />
-                <img class="project-skill" src="./images/css.jfif" alt="" />
-                <img
-                  class="project-skill"
-                  src="./images/JavaScript.svg"
-                  alt=""
-                />
-                <img class="project-skill" src="./images/React.png" alt="" />
-                <img class="project-skill" src="./images/Tailwind.png" alt="" />
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="projects-container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my recent work and projects</p>
+      </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/assets/weather_app-Kv3GTQDP.png" alt="Weather App" />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">API</span>
+                </div>
               </div>
-              <h2 class="project-heading">🌤️ Weather App</h2>
-              <div class="project-sub-heading">
-                A responsive weather application built with ReactJS, HTML, CSS,
-                and the OpenWeatherMap API. It allows users to search for any
-                city or using location and view real-time weather details
-                including temperature, humidity, wind speed, and weather
-                conditions. The interface updates dynamically based on the
-                weather and includes user-friendly error handling for invalid
-                searches.
               </div>
-              <div class="button-group">
-                <a
-                  href="https://weatherappminiproject.netlify.app/"
-                  target="_blank"
-                  class="live-project-btn"
-                  >View Live Project</a
-                >
+            <div class="project-content">
+              <h3 class="project-title">🌤️ Weather App</h3>
+              <p class="project-description">
+                A responsive weather application built with ReactJS and OpenWeatherMap API. 
+                Features real-time weather data, city search, and dynamic weather displays.
+              </p>
+              <div class="project-links">
+                <a href="https://weatherappminiproject.netlify.app/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- 2nd card -->
-          <div class="project-card" id="project2">
-            <div class="project-no project-no-left">02</div>
-            <div class="project-content project-content-right">
-              <div class="project-skill-container">
-                <img class="project-skill" src="./images/HTML.png" alt="" />
-                <img class="project-skill" src="./images/css.jfif" alt="" />
-                <img
-                  class="project-skill"
-                  src="./images/JavaScript.svg"
-                  alt=""
-                />
-                <img class="project-skill" src="./images/React.png" alt="" />
-                <img class="project-skill" src="./images/Tailwind.png" alt="" />
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/assets/fashion_app-Dvsi-ls1.png" alt="Fashion Shop" />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">E-commerce</span>
               </div>
-              <h2 class="project-heading">
-                A Fashion shop for Man ,Women and Kids
-              </h2>
-              <div class="project-sub-heading">
-                Fashion Shop is a modern e-commerce web application built with
-                React (Vite), offering a seamless shopping experience. The
-                project demonstrates responsive UI design, reusable components,
-                and dynamic state management. It includes product listings,
-                category-based shopping, cart functionality, and authentication
-                pages for login/signup.
               </div>
-              <div class="button-group">
-                <a
-                  href="https://clothshopapp.netlify.app/"
-                  target="_blank"
-                  class="live-project-btn"
-                  >View Live Project</a
-                >
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">🛍️ Fashion Shop</h3>
+              <p class="project-description">
+                A modern e-commerce web application with React (Vite). Features product listings, 
+                category-based shopping, cart functionality, and user authentication.
+              </p>
+              <div class="project-links">
+                <a href="https://clothshopapp.netlify.app/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- 3rd card -->
-          <div class="project-card" id="project3">
-            <div class="project-no project-no-right">03</div>
-            <div class="project-content project-content-left">
-              <div class="project-skill-container">
-                <img class="project-skill" src="./images/HTML.png" alt="" />
-                <img class="project-skill" src="./images/css.jfif" alt="" />
-                <img
-                  class="project-skill"
-                  src="./images/JavaScript.svg"
-                  alt=""
-                />
-                <img class="project-skill" src="./images/React.png" alt="" />
-                <img class="project-skill" src="./images/Tailwind.png" alt="" />
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/assets/Project3-CeIzqpnh.png" alt="Interior Design" />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">Coming Soon</span>
+                </div>
               </div>
-              <h2 class="project-heading">On Developing</h2>
-              <div class="project-sub-heading">
-                A Website is devloping for interior designer to showcase her
-                works and samples
               </div>
-              <div class="button-group">
-                <a href="#" class="live-project-btn coming-soon">Coming Soon</a>
-                <!-- <a href="https://github.com/your-repo">
-                                <i title="GitHub-link" class="fab fa-github icon"></i>
-                            </a>
-                            <a href="https://your-live-demo.com">
-                                <i title="live-link" class="fas fa-link icon"></i>
-                            </a> -->
+            <div class="project-content">
+              <h3 class="project-title">🏠 Interior Design Portfolio</h3>
+              <p class="project-description">
+                A website for interior designer to showcase works and samples. 
+                Currently in development with modern design principles.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link coming-soon">
+                  <i class="fas fa-clock"></i>
+                  Coming Soon
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- 4th card -->
-          <div class="project-card" id="project4">
-            <div class="project-no project-no-left">04</div>
-            <div class="project-content project-content-right">
-              <div class="project-skill-container">
-                <img class="project-skill" src="./images/HTML.png" alt="" />
-                <img class="project-skill" src="./images/css.jfif" alt="" />
-                <img
-                  class="project-skill"
-                  src="./images/JavaScript.svg"
-                  alt=""
-                />
-                <img class="project-skill" src="./images/React.png" alt="" />
-                <img class="project-skill" src="./images/Tailwind.png" alt="" />
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="/assets/Project4-DI1Bwkzp.png" alt="Architecture" />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">Coming Soon</span>
+                </div>
               </div>
-              <h2 class="project-heading">On Developing</h2>
-              <div class="project-sub-heading">
-                A architectural website Developing to plan your building or home
-                .
               </div>
-              <div class="button-group">
-                <a href="#" class="live-project-btn coming-soon">Coming Soon</a>
-                <!-- <a href="https://github.com/your-repo">
-                                <i title="GitHub-link" class="fab fa-github icon"></i>
-                            </a>
-                            <a href="https://your-live-demo.com">
-                                <i title="live-link" class="fas fa-link icon"></i>
-                            </a> -->
+            <div class="project-content">
+              <h3 class="project-title">🏗️ Architecture Planning</h3>
+              <p class="project-description">
+                An architectural website for planning buildings and homes. 
+                Features interactive design tools and visualization.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link coming-soon">
+                  <i class="fas fa-clock"></i>
+                  Coming Soon
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container skills-container" id="skills">
-        <div class="skills-feded-text">Skills</div>
-        <div class="skills-container-left">
-          <h2 class="skils-heading">
-            <span class="caps">M</span>e and
-            <br />
-            MyTech Stack
-          </h2>
-          <div class="skills-sub-heading">
-            <p>
-              Hi Everyone My name is Md Aayan Alam . these are my skills for
-              software developement specially front-end part of website.
-            </p>
-            <br />
-            <p>
-              HTML (HyperText Markup Language) HTML is the standard language for
-              creating web page structure. it define content for website. Every
-              website starts with HTML as its foundation.
-            </p>
-            <br />
-            <p>
-              CSS (Cascading Style Sheets) CSS is used to style and visually
-              design HTML elements. It controls layout, colors, fonts, spacing,
-              and responsiveness. CSS can be applied inline, internally, or
-              externally via stylesheets.
-            </p>
-            <br />
-            <p>
-              Tailwind CSS Tailwind is a utility-first CSS framework for rapidly
-              building custom designs. It provides pre-defined classes for
-              styling without writing custom CSS. It's great for speed,
-              responsiveness, and keeping design consistent.
-            </p>
-            <br />
-            <p>
-              JavaScript JavaScript is a scripting language that adds
-              interactivity to web pages. It controls dynamic behavior like form
-              validation, sliders, and pop-ups. It runs in the browser and works
-              with HTML/CSS to create full web apps.
-            </p>
-          </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="skills-container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">My technical expertise and tools I work with</p>
         </div>
-        <div class="skills-container-right">
-          <img src="./images/HTML.png" alt="" class="skills-logo" />
-          <img src="./images/css.jfif" alt="" class="skills-logo" />
-          <img src="./images/Javascript.svg" alt="" class="skills-logo" />
-          <img src="./images/React.png" alt="" class="skills-logo" />
-
-          <img src="./images/Tailwind.png" alt="" class="skills-logo" />
-          <img src="./images/Bootstrap.svg" alt="" class="skills-logo" />
-
-          <img src="./images/Git.svg" alt="" class="skills-logo" />
-        </div>
-      </div>
-      <div class="contact-us-form-container" id="Contact-me">
-        <div class="container-of-contact">
-          <h1 class="contact-us-heading">Contact me</h1>
-          <h3 class="contact-us-sub-heading">
-            Questions, thoughts, or just want to say hello or contact-us
-          </h3>
-          <div class="contact-us-form">
-            <form action="" class="form">
-              <div class="formfield-container">
-                <input
-                  class="formfield"
-                  type="text"
-                  name="name"
-                  id=""
-                  placeholder="Enter your name"
-                  ;
-                />
-                <input
-                  class="formfield"
-                  type="email"
-                  name="email"
-                  id=""
-                  placeholder="Enter your Email address"
-                />
-                <input
-                  class="formfield"
-                  type="text"
-                  name="subject"
-                  id=""
-                  placeholder="Enter your subject"
-                />
-                <textarea
-                  name="message"
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Enter your message"
-                  class="formfield formfield-textarea"
-                >
-                </textarea>
+        
+        <div class="skills-content">
+          <div class="skills-info">
+            <h3 class="skills-title">About My Skills</h3>
+            <p class="skills-description">
+              Hi, I'm Md Aayan Alam, a passionate front-end developer specializing in creating 
+              beautiful, responsive web experiences. I focus on modern web technologies and 
+              best practices to deliver exceptional user experiences.
+            </p>
+            
+            <div class="skill-categories">
+              <div class="skill-category">
+                <h4 class="category-title">Frontend Development</h4>
+                <p>HTML5, CSS3, JavaScript (ES6+), React.js, Responsive Design</p>
               </div>
-              <div>
-                <button type="submit" class="pink-button" id="submit-button">
-                  send message
-                  <i class="submit-icon fa-solid fa-papper-plane"></i>
-                </button>
+              <div class="skill-category">
+                <h4 class="category-title">Styling & Frameworks</h4>
+                <p>Tailwind CSS, Bootstrap, CSS Grid, Flexbox, SASS/SCSS</p>
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="container">
-          <div class="footer-wrapper">
-            <div class="footer-feded-text">Aayan</div>
-            <div class="link-wrapper">
-              <div>
-                <a href="#projects">projects</a>
-              </div>
-              <div>
-                <a href="#skills">skills</a>
-              </div>
-              <div>
-                <a href="#Contact-me">Contact-me</a>
+              <div class="skill-category">
+                <h4 class="category-title">Tools & Version Control</h4>
+                <p>Git, GitHub, VS Code, Chrome DevTools, npm/yarn</p>
               </div>
             </div>
-            <div class="icon-wrapper">
-              <!-- <a href="https://www.linkedin.com/in/username/"> -->
-                <!-- <i title="linkedin" class="fab fa-linkedin icon"></i -->
-              ></a>
-              <a href="https://github.com/aayan8081/">
-                <i title="GitHub-link" class="fab fa-github icon"></i>
+          </div>
+          
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="/assets/HTML-CKyDEyeN.png" alt="HTML5" />
+              </div>
+              <span class="skill-name">HTML5</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="/assets/css-C5PnEVCs.jfif" alt="CSS3" />
+              </div>
+              <span class="skill-name">CSS3</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3ejavascript%3c/title%3e%3cpath%20fill='%23f7df1e'%20d='M0%200h32v32h-32zM29.379%2024.368c-0.233-1.46-1.184-2.687-4.004-3.831-0.981-0.46-2.072-0.78-2.396-1.52-0.121-0.44-0.14-0.68-0.061-0.94%200.2-0.861%201.22-1.12%202.020-0.88%200.52%200.16%201%200.56%201.301%201.2%201.379-0.901%201.379-0.901%202.34-1.5-0.36-0.56-0.539-0.801-0.781-1.040-0.84-0.94-1.959-1.42-3.779-1.379l-0.94%200.119c-0.901%200.22-1.76%200.7-2.28%201.34-1.52%201.721-1.081%204.721%200.759%205.961%201.82%201.36%204.481%201.659%204.821%202.94%200.32%201.56-1.16%202.060-2.621%201.88-1.081-0.24-1.68-0.781-2.34-1.781l-2.44%201.401c0.28%200.64%200.6%200.919%201.080%201.479%202.32%202.341%208.12%202.221%209.161-1.339%200.039-0.12%200.32-0.94%200.099-2.2zM17.401%2014.708h-2.997c0%202.584-0.012%205.152-0.012%207.74%200%201.643%200.084%203.151-0.184%203.615-0.44%200.919-1.573%200.801-2.088%200.64-0.528-0.261-0.796-0.621-1.107-1.14-0.084-0.14-0.147-0.261-0.169-0.261l-2.433%201.5c0.407%200.84%201%201.563%201.765%202.023%201.14%200.68%202.672%200.9%204.276%200.54%201.044-0.301%201.944-0.921%202.415-1.881%200.68-1.24%200.536-2.76%200.529-4.461%200.016-2.739%200-5.479%200-8.239z'%3e%3c/path%3e%3c/svg%3e" alt="JavaScript" />
+              </div>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="/assets/React-b0s4x0q8.png" alt="React" />
+              </div>
+              <span class="skill-name">React</span>
+        </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="/assets/Tailwind-xnK0lD3j.png" alt="Tailwind" />
+        </div>
+              <span class="skill-name">Tailwind</span>
+      </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="data:image/svg+xml,%3csvg%20height='1992'%20viewBox='0%200%20512%20407.864'%20width='2500'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='m106.344%200c-29.214%200-50.831%2025.57-49.863%2053.3.929%2026.641-.278%2061.145-8.964%2089.283-8.717%2028.217-23.449%2046.098-47.517%2048.393v25.912c24.068%202.3%2038.8%2020.172%2047.516%2048.393%208.687%2028.138%209.893%2062.642%208.964%2089.283-.968%2027.726%2020.649%2053.3%2049.868%2053.3h299.347c29.214%200%2050.827-25.57%2049.859-53.3-.929-26.641.278-61.145%208.964-89.283%208.717-28.221%2023.413-46.1%2047.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775%20251.067c0%2038.183-28.481%2061.34-75.746%2061.34h-80.458a8.678%208.678%200%200%201%20-8.678-8.678v-199.593a8.678%208.678%200%200%201%208.678-8.678h80c39.411%200%2065.276%2021.348%2065.276%2054.124%200%2023.005-17.4%2043.6-39.567%2047.208v1.2c30.176%203.31%2050.495%2024.21%2050.495%2053.077zm-84.519-128.1h-45.876v64.8h38.639c29.87%200%2046.34-12.028%2046.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876%2090.511v71.411h47.564c31.1%200%2047.573-12.479%2047.573-35.931s-16.935-35.484-49.573-35.484h-45.564z'%20fill='%237952b3'%20fill-rule='evenodd'/%3e%3c/svg%3e" alt="Bootstrap" />
+              </div>
+              <span class="skill-name">Bootstrap</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3ctitle%3egit%3c/title%3e%3cpath%20fill='%23f05032'%20d='M31.395%2014.573l-13.972-13.971c-0.805-0.804-2.109-0.804-2.917%200l-2.895%202.9%203.68%203.68c0.86-0.287%201.839-0.093%202.519%200.588%200.688%200.687%200.877%201.677%200.584%202.533l3.544%203.547c0.86-0.297%201.849-0.104%202.533%200.58%200.961%200.96%200.961%202.512%200%203.472-0.959%200.959-2.508%200.959-3.467%200-0.719-0.721-0.899-1.783-0.539-2.661l-3.319-3.301v8.7c0.235%200.115%200.456%200.271%200.651%200.464%200.951%200.961%200.951%202.511%200%203.467-0.959%200.961-2.519%200.961-3.479%200-0.959-0.959-0.959-2.505%200-3.464%200.243-0.24%200.516-0.421%200.807-0.541v-8.785c-0.289-0.121-0.565-0.296-0.8-0.535-0.727-0.727-0.901-1.789-0.528-2.679l-3.616-3.633-9.581%209.575c-0.8%200.807-0.8%202.112%200%202.919l13.973%2013.969c0.805%200.805%202.109%200.805%202.915%200l13.907-13.907c0.807-0.804%200.807-2.109%200-2.916z'%3e%3c/path%3e%3c/svg%3e" alt="Git" />
+              </div>
+              <span class="skill-name">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's work together on your next project</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 class="contact-title">Let's Connect</h3>
+            <p class="contact-description">
+              I'm always interested in new opportunities and exciting projects. 
+              Whether you have a question or just want to say hello, feel free to reach out!
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+              <div>
+                  <h4>Email</h4>
+                  <p>aayan.alam@example.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+              <div>
+                  <h4>Location</h4>
+                  <p>Available for remote work</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-clock"></i>
+              <div>
+                  <h4>Response Time</h4>
+                  <p>Usually within 24 hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3 class="footer-name">Md Aayan Alam</h3>
+            <p class="footer-description">Front-end Developer passionate about creating amazing web experiences.</p>
+          </div>
+          
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-social">
+            <h4>Connect With Me</h4>
+            <div class="social-links">
+              <a href="https://github.com/aayan8081/" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
               </a>
             </div>
           </div>
         </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 Md Aayan Alam. All rights reserved.</p>
+          </div>
+        </div>
       </footer>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script
-      src="https://kit.fontawesome.com/58a810656e.js"
-      crossorigin="anonymous"
-    ></script>
     <script>
+      // Typed.js animation
       var typeData = new Typed(".role", {
         strings: [
-          "Full Stack Developer",
+          "Front-end Developer",
           "Web Developer",
-          "Specially Front-end",
-          "Coder",
+          "React Developer",
+          "UI/UX Enthusiast"
         ],
         loop: true,
         typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
+        backSpeed: 60,
+        backDelay: 1500,
       });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Mobile menu toggle
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          });
+        });
+      }
+
+      // Form submission
+      const contactForm = document.querySelector('.contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          // Add your form submission logic here
+          alert('Thank you for your message! I\'ll get back to you soon.');
+        });
+      }
     </script>
   </body>
 </html>
